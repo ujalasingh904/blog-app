@@ -30,6 +30,9 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.get("/", (req, res) => {
+  res.send("WELCOME TO THE BLOG API");
+});
 app.get("/hello", (req, res) => {
   res.send("Hello World!");
 });
